@@ -13,9 +13,10 @@ public class Course {
 
     public int getMarks() {
         return marks;
-            }
+    }
 
-    // You can also add a main() here to test Course alone if needed.
+    public static void main(String[] args) {
+        Course c = new Course("Mathematics", 38);
+        System.out.println("Course: " + c.getCourseName() + ", Marks: " + c.getMarks());
+    }
 }
-
-
